@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: turquoise;
+}
+
+nav {
+    background-color: rgb(37, 9, 37);
+    color: rgb(209, 134, 36);
+    height: 65px;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+li b {
+    /* margin-left: 550px; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.playersInfo {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.playersInfo input {
+    padding: 15px;
+    width: 250px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+#PlayerINFO .btn {
+    background-color: rgb(37, 9, 37);
+    color: white;
+    font-size: 20px;
+}
+
+.playersInfo label {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.playersInfo h1 {
+    margin-bottom: 20px;
+    font-size: 55px;
+    font-weight: 900;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.gameContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    display: none;
+}
+
+.container {
+    border-radius: 10px;
+    overflow: hidden;
+    height: 410px;
+}
+
+.AdditionDisplayBlockClass {
+    display: block;
+    display: flex;
+}
+
+.displayBockFlexANDDirection {
+    display: block;
+    display: flex;
+    flex-direction: column;
+}
+
+.AdditionDisplayNoneClass {
+    display: none;
+}
+
+.btn {
+    margin: 0 23px;
+    padding: 1px 18px;
+    background: #f3e7f9;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Baloo Bhaina 2';
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(3, 10vw);
+    grid-template-columns: repeat(3, 10vw);
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+
+.box {
+    border: 3px solid turquoise;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: tomato;
+}
+
+.box:hover {
+    background-color: rgb(228, 34, 0);
+}
+
+.gameInfo .btn {
+    background-color: rgb(88, 37, 88);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 130px;
+    transition: 0.2s;
+}
+
+.gameInfo .btn:hover {
+    background-color: rgb(54, 23, 54);
+    transition: 0.3s;
+}
+
+.info {
+    font-size: 22px;
+}
+
+.gameInfo {
+    padding: 0 34px;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+.gameInfo h1 {
+    font-size: 2.5rem;
+}
+
+.imgbox img {
+    width: 0;
+    pointer-events: none;
+    transition: width 1s ease-in-out;
+}
+
+.br-0 {
+    border-right: 0;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+
+.bt-0 {
+    border-top: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
+
+.line {
+    background-color: black;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background-color: white;
+    transition: width 1s ease-in-out;
+}
+
+@media screen and (max-width: 950px) {
+    nav {
+        text-align: center;
+    }
+    nav ul li {
+        float: left;
+        justify-content: center;
+        align-items: center;
+    }
+    .gameContainer {
+        flex-wrap: wrap;
+        text-align: center;
+        overflow: hidden;
+    }
+    .gameInfo {
+        margin-top: 34px;
+    }
+    .gameInfo h1 {
+        font-size: 2rem;
+    }
+    .container {
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+        height: 300px;
+    }
+    .container .box {
+        font-size: 4rem;
+    }
+}
+
+
+/* chatbox coading css  */
+
+
+/* .chatbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: wheat;
+    border-radius: 35px;
+    background-color: rgb(223, 78, 25);
+    height: 300px;
+    width: 300px;
+    position: relative;
+    
+}
+.chatBody{
+    height: 358px;
+    width: 300px;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    color: rgb(34, 34, 34);
+    background-color: rgb(247, 178, 152);
+    overflow: scroll;
+
+}
+.chatBody p{
+    margin: 15px 20px;
+}
+.msgfield{
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+}
+.msgfield input{
+    padding: 5px;
+    width: 238px;
+    float: left;
+}
+.msgfield button{
+   border-radius: 100%;
+    float: left;
+    color: white;
+    background-color: black;
+    font-size: 25px;
+    cursor: pointer;
+}
+.msgfield button:hover{
+    font-size: 25.05px;
+    color: rgb(111, 241, 111);
+    transition: 0.1s ease;
+} */
